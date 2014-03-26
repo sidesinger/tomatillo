@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tomatillo Timer</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+ 
+<header>
+	<h1>Tomatillo Timer</h1>
+	<h2>Starting Up</h2>
+	<h3>Not Logged In</h3>
+	<nav>
+		<ul>
+			<li>Log In</li>
+			<li>Stats</li>
+			<li>Settings</li>
+			<li>About</li>
+		</ul>
+	</nav>
+</header>
+<section id="welcome">
+	<h1>Welcome to Tomatillo Timer</h1>
+	Use Tomatillo Timer to keep you on task.  Ever time you finish a set uninterupted amount of work time, you'll earn a break (and, if you log in, badges, glorious badges)
+	<button id="getStartedButton">Let's Get Started!</button>
+</section>
+<article>
+	<section id="sessionTypePicker">
+		<header>Pick your <a href="">nightshade family</a> work style</header>
+		<input type="radio" name="sessionType" id="tomaSessionTypeRadio" value="toma" checked />
+		<label for="tomaSessionTypeRadio">Tomatillo</label>
+		<input type="radio" name="sessionType"id="SessionTypeRadio"  value="pomo" checked />
+		<label for="pomoSessionTypeRadio">Pomodoro</label>
+		<input type="radio" name="sessionType"id="aubSessionTypeRadio"  value="aub" checked />
+		<label for="aubSessionTypeRadio">Aubergine</label>
+		<div id="selectedSessionTypeDescription">
+			<img src="" alt="Tomatillo" />
+			<h4>Tomatillo</h4>
+			10 minutes of work earns a 2 minute break. 
+		</div>
+	</section>
+	<section id="workAndBreakPlan">
+		<header>Work and Break Plan</header>
+		<label for="workPlan">I will work on</label>
+		<input type="text" name="workPlan" id="workPlan" placeholder="Finally finish those tps reports..." />
+		<label for="breakPlan">If I finished I get to</label>
+		<input type="text" name="breakPlan" id="breakPlan" placeholder="Watch Kung Fu movies" />
+		<button id="startWork">Start</button>
+	</section>
+</article>
+<footer>
+	Written by <a href="http://www.sidesinger.com">Andrew Sidesinger</a>
+</footer> 
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+    "users": [
+        {
+            "_id":"sidesinger@gmail.com",
+            "provider_user_id":10,
+            "profile":{
+                // http://passportjs.org/guide/profile/
+            },
+            "settings":{
+                "playSoundOnSessionEnd":true,
+                "vibrateOnSessionEnd":true,
+                "keepScreenOn":true,
+                "sessionEndSound":{
+                    "name":"Jingle",
+                    "url":""
+                }
+            },
+            "stats": {
+                "completedTomas":1,
+                "completedPoms":2,
+                "completedAubs":3,
+                "failedTomas":4,
+                "failedPoms":2,
+                "failedAubs":0
+            },
+            "achievements":[
+                {"name":"Salsa Verde","imageUrl":""},
+                {"name":"Eggplant Parm","imageUrl":""}
+            ],
+            "records": [
+                {
+                    "type": "toma",
+                    "startedOn": 1392218911000,
+                    "quitOn": 1392218911000,
+                    "finishedOn": 1392218911000,
+                    "workingTask":"TPS Reports, never ending TPS Reports",
+                    "rewardTask":"Jenga Time!"
+                },
+                {
+                    "type": "pomo",
+                    "startedOn": 1392218911000,
+                    "quitOn": 1392218911000,
+                    "finishedOn": 1392218911000,
+                    "workingTask":"TPS Reports, never ending TPS Reports",
+                    "rewardTask":"Jenga Time!"
+                }
+            ]
+            
+        }
+    ],
+    "achievements":[
+        {
+            "name":"Salsa Verde",
+            "imageUrl":"",
+            "description":"You've earned 10 Tomatillos.  Mash 'em up. Get some chips and dig in.",
+            "recipeUrl":"",
+            "criteria":"10+ Tomatillos"
+        },
+        {
+            "name":"Eggplant Parm",
+            "imageUrl":"You've earned 20 Aubergines.  Time for an Itallian feast!",
+            "description":"",
+            "recipeUrl":"",
+            "criteria":"20+ Aubergines"
+        }
+    ],
+    "sounds": [
+        {
+            "name":"Jingle",
+            "url":""
+        },
+        {
+            "name":"Jangle",
+            "url":""
+        }
+    ],
+    "fruits": [
+        {
+            "_id": "toma",
+            "name":"Tomatillo",
+            "defaultRunTimeMins": 10,
+            "deafultBreakTimeMins": 2,
+            "defaultImageUrl": "",
+            "completedImageUrl":"",
+            "splatImageUrl":""    
+        },
+        {
+            "_id": "pomo",
+            "name":"Pomodoro",
+            "defaultRunTimeMins": 25,
+            "deafultBreakTimeMins": 5,
+            "defaultImageUrl": "",
+            "completedImageUrl":"",
+            "splatImageUrl":""
+        },
+        {
+            "_id": "aub"
+            "name":"Aubergine",
+            "defaultRunTimeMins": 45,
+            "deafultBreakTimeMins": 15,
+            "defaultImageUrl": "",
+            "completedImageUrl":"",
+            "splatImageUrl":""
+        }
+    ]
+    
+}
