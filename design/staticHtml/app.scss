@@ -1,0 +1,63 @@
+@import "bootstrap.min.scss"; 
+
+$regFont: 'Open Sans', sans-serif;
+$headingFont: 'Open Sans', sans-serif;
+$datBlue: rgb(66, 139, 202);
+
+body {
+    @extend .container;
+    font-family: $regFont;
+    font-size: 18px;
+    // background-color: #333;
+}
+
+body>footer {
+    border-top: 10px solid #333;        
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear:both;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+body>article {
+    min-height: 400px;
+}
+
+h1,h2,h3 {
+    font-family: $headingFont;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.7em;
+}
+h3 {
+    font-size: 1.4em;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color: $datBlue;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ccc;
+    text-decoration: underline;
+}
+
+body>header{
+    h1,h2,h3,h4 { 
+    }
+
+    h3 {
+        font-size: 0.5em;
+        font-weight: normal;
+    }
+}
