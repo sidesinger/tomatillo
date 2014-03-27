@@ -1,7 +1,7 @@
 {
     "users": [
         {
-            "_id":"sidesinger@gmail.com",
+            "_id":"dauser@gmail.com",
             "provider_user_id":10,
             "profile":{
                 // http://passportjs.org/guide/profile/
@@ -13,7 +13,8 @@
                 "sessionEndSound":{
                     "name":"Jingle",
                     "url":""
-                }
+                },
+                "soundVolume": 90
             },
             "stats": {
                 "completedTomas":1,

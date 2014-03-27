@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Tomatillo Timer</title>
-  <link rel="stylesheet" href="app.css">
+  <title>Tomatillo Time</title>
+  <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
  
 <header>
 	<h1>Tomatillo Timer</h1>
-	<h2>Starting Up</h2>
-	<h3>Not Logged In</h3>
 	<nav>
 		<ul>
 			<li>Log In</li>
@@ -26,27 +24,52 @@
 	<button id="getStartedButton">Let's Get Started!</button>
 </section>
 <article>
+	<h2>Starting Up</h2>
 	<section id="sessionTypePicker">
-		<header>Pick your <a href="">nightshade family</a> work style</header>
-		<input type="radio" name="sessionType" id="tomaSessionTypeRadio" value="toma" checked />
-		<label for="tomaSessionTypeRadio">Tomatillo</label>
-		<input type="radio" name="sessionType"id="SessionTypeRadio"  value="pomo" checked />
-		<label for="pomoSessionTypeRadio">Pomodoro</label>
-		<input type="radio" name="sessionType"id="aubSessionTypeRadio"  value="aub" checked />
-		<label for="aubSessionTypeRadio">Aubergine</label>
-		<div id="selectedSessionTypeDescription">
-			<img src="" alt="Tomatillo" />
-			<h4>Tomatillo</h4>
-			10 minutes of work earns a 2 minute break. 
+		<header>
+			<h3>Pick your <a href="">nightshade family</a> work style</header></h3>
+		</header>
+		<div class="formArea">
+			<div class="form-group">
+				<input type="radio" name="sessionType" id="tomaSessionTypeRadio" value="toma" checked />
+				<label for="tomaSessionTypeRadio">Tomatillo</label>
+				<input type="radio" name="sessionType"id="SessionTypeRadio"  value="pomo" />
+				<label for="pomoSessionTypeRadio">Pomodoro</label>
+				<input type="radio" name="sessionType"id="aubSessionTypeRadio"  value="aub" />
+				<label for="aubSessionTypeRadio">Aubergine</label>
+			</div>
+			<div id="selectedSessionTypeDescription">
+				<img src="images/toma.jpg" width="100" height="100" alt="Image of Tomatillo" />
+				<h4>Tomatillo</h4>
+				10 minutes of work earns a 2 minute break. 
+			</div>
 		</div>
 	</section>
 	<section id="workAndBreakPlan">
-		<header>Work and Break Plan</header>
-		<label for="workPlan">I will work on</label>
-		<input type="text" name="workPlan" id="workPlan" placeholder="Finally finish those tps reports..." />
-		<label for="breakPlan">If I finished I get to</label>
-		<input type="text" name="breakPlan" id="breakPlan" placeholder="Watch Kung Fu movies" />
-		<button id="startWork">Start</button>
+		<header>
+			<h3>Work and Break Plan</h3>
+		</header>	
+		<div class="formArea">
+			<div class="form-group">
+				<label for="workPlan">I will work on</label>
+				<div class="inputArea">
+					<input type="text" name="workPlan" id="workPlan" placeholder="Finally finish those tps reports" maxlength="100" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="breakPlan">If I finished I get to</label>
+				<div class="inputArea">
+					<input type="text" name="breakPlan" id="breakPlan" placeholder="Watch Kung Fu movies" maxlength="100" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submitArea">
+					<button type="submit" id="startWork">
+						<span class="glyphicon glyphicon-play"></span>
+						Start Working</button>
+				</div>
+			</div>
+		</div>
 	</section>
 </article>
 <footer>
