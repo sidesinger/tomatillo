@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tomatillo Time</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+ 
+<header>
+	<h1>Tomatillo Timer</h1>
+	<nav>
+		<ul>
+			<li>Log In</li>
+			<li>Stats</li>
+			<li>Settings</li>
+			<li>About</li>
+		</ul>
+	</nav>
+</header>
+<section id="welcome" style="display:none">
+	<h1>Welcome to Tomatillo Timer</h1>
+	Use Tomatillo Timer to keep you on task.  Ever time you finish a set uninterupted amount of work time, you'll earn a break (and, if you log in, badges, glorious badges)
+	<button id="getStartedButton">Let's Get Started!</button>
+</section>
+<article>
+	<h2>Starting Up</h2>
+	<section id="sessionTypePicker">
+		<header>
+			<h3>Pick your <a href="">nightshade family</a> work style</header></h3>
+		</header>
+		<div class="formArea">
+			<div class="form-group">
+				<input type="radio" name="sessionType" id="tomaSessionTypeRadio" value="toma" checked />
+				<label for="tomaSessionTypeRadio">Tomatillo</label>
+				<input type="radio" name="sessionType"id="SessionTypeRadio"  value="pomo" />
+				<label for="pomoSessionTypeRadio">Pomodoro</label>
+				<input type="radio" name="sessionType"id="aubSessionTypeRadio"  value="aub" />
+				<label for="aubSessionTypeRadio">Aubergine</label>
+			</div>
+			<div id="selectedSessionTypeDescription">
+				<img src="images/toma.jpg" width="100" height="100" alt="Image of Tomatillo" />
+				<h4>Tomatillo</h4>
+				10 minutes of work earns a 2 minute break. 
+			</div>
+		</div>
+	</section>
+	<section id="workAndBreakPlan">
+		<header>
+			<h3>Work and Break Plan</h3>
+		</header>	
+		<div class="formArea">
+			<div class="form-group">
+				<label for="workPlan">I will work on</label>
+				<div class="inputArea">
+					<input type="text" name="workPlan" id="workPlan" placeholder="Finally finish those tps reports" maxlength="100" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="breakPlan">If I finished I get to</label>
+				<div class="inputArea">
+					<input type="text" name="breakPlan" id="breakPlan" placeholder="Watch Kung Fu movies" maxlength="100" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submitArea">
+					<button type="submit" id="startWork">
+						<span class="glyphicon glyphicon-play"></span>
+						Start Working</button>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+<footer>
+	Written by <a href="http://www.sidesinger.com">Andrew Sidesinger</a>
+</footer> 
+</body>
+</html>

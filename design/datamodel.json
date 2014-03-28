@@ -81,27 +81,27 @@
             "name":"Tomatillo",
             "defaultRunTimeMins": 10,
             "deafultBreakTimeMins": 2,
-            "defaultImageUrl": "",
-            "completedImageUrl":"",
-            "splatImageUrl":""    
+            "defaultImageUrl": "images/toma.jpg",
+            "completedImageUrl":"images/toma.jpg",
+            "splatImageUrl":"images/tomaSplat.jpg"    
         },
         {
             "_id": "pomo",
             "name":"Pomodoro",
             "defaultRunTimeMins": 25,
             "deafultBreakTimeMins": 5,
-            "defaultImageUrl": "",
-            "completedImageUrl":"",
-            "splatImageUrl":""
+            "defaultImageUrl": "images/pomo.jpg",
+            "completedImageUrl":"images/pomo.jpg",
+            "splatImageUrl":"images/pomoSplat.jpg"    
         },
         {
-            "_id": "aub"
+            "_id": "aub",
             "name":"Aubergine",
             "defaultRunTimeMins": 45,
             "deafultBreakTimeMins": 15,
-            "defaultImageUrl": "",
-            "completedImageUrl":"",
-            "splatImageUrl":""
+            "defaultImageUrl": "images/aub.jpg",
+            "completedImageUrl":"images/aub.jpg",
+            "splatImageUrl":"images/aubSplat.jpg"    
         }
     ]
     
